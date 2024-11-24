@@ -1,4 +1,5 @@
-import 'package:bloc_basics/cubit_home_screen.dart';
+import 'package:bloc_basics/screens/bloc_counter_screen.dart';
+import 'package:bloc_basics/screens/cubit_counter_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -12,10 +13,10 @@ class MyApplication extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => CounterCubit(),
+      create: (context) => CounterBloc(),
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: CubitHomeScreen(),
+        home: BlocCounterScreen(),
       ),
     );
   }

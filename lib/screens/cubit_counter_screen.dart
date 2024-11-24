@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class CubitHomeScreen extends StatelessWidget {
-  const CubitHomeScreen({super.key});
+class CubitCounterScreen extends StatelessWidget {
+  const CubitCounterScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
